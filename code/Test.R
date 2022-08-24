@@ -42,3 +42,6 @@ p2
 
 shinytheme("cyborg")
 datatable(mtcars2)
+
+mtcars
+
