@@ -7,11 +7,8 @@ library(shiny)
 library(shinythemes)
 
 
-
 data("mtcars")
 head(mtcars)
-
-
 
 
 mtcars2 <- within(mtcars, {
@@ -22,11 +19,7 @@ mtcars2 <- within(mtcars, {
 })
 
 
-
-
 theme_set(theme_ft_rc())
-
-
 
 
 p1 <- ggplot(mtcars2) +
@@ -43,10 +36,8 @@ p1 <- ggplot(mtcars2) +
 p2 <- p1 + facet_grid(vs ~ am)
 
 
-
 p1
 p2
-
 
 
 shinytheme("cyborg")
